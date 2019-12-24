@@ -265,7 +265,8 @@ function nextvideo(){
     $('#nextbutton').css("display", "none");
     $('#stopbutton').css("display", "none");
     $('#startbutton').css("display", "none");
-    $('#finaldata').css("display", "initial");
+    $('#videodiv').css("display", "none");
+    $('#finaldata').css("display", "block");
 
     document.getElementById('sixteenvideo').src += '';
 
@@ -621,7 +622,8 @@ const recordvideo = {
 const finalpage = {
   display: "none",
   textAlign: "center",
-  backgroundColor: "black"
+  backgroundColor: "black",
+  marginTop:"70px"
 }
 
 
@@ -696,7 +698,7 @@ class QuestionVideo extends Component {
 
            </Col>
            <Col md="8">
-        <div className="card">
+        <div className="card" id="videodiv">
          <video id="Questionvideo" src={videos1} autoPlay={false} type={"video/mp4"} style={iframevideo} controls></video>
          <video id="secondvideo" src={Videos2} autoPlay={false} type={"video/mp4"} style={iframevideo1} controls></video>
          <video id="thirdvideo" src={Videos3} autoPlay={false} type={"video/mp4"} style={iframevideo1} controls></video>
