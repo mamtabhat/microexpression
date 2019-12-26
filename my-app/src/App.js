@@ -287,6 +287,7 @@ console.log("questionvideo", questionvideo);
 function playVideo(){
   //questionvideo.play();
 
+  select();
 
   console.log("count", count);
 
@@ -334,7 +335,7 @@ function playVideo(){
   //console.log("questionduration", questionduration);
 
  
-  select();
+ 
    
 
   // setTimeout(function(){ 
@@ -753,9 +754,9 @@ class Recordvideo extends Component {
           </Col>
          <Col md="6">
          <div style={buttons}>
-            <button type="button" id="nextbutton" style={startalign} onClick={nextvideo} className="btn btn-success">Next</button>
-            <button type="button" id="stopbutton" style={stopalign} onClick={stoprecording} className="fa fa-stop btn btn-danger"></button>
-            <button type="button" id="startbutton" style={startalign}  onClick={playVideo} className="btn btn-success"><i class="fas fa-video"></i></button>
+            <button type="button" title="next video" id="nextbutton" style={startalign} onClick={nextvideo} className="btn btn-success">Next</button>
+            <button type="button" title="stop video" id="stopbutton" style={stopalign} onClick={stoprecording} className="fa fa-stop btn btn-danger"></button>
+            <button type="button" title="play video" id="startbutton" style={startalign}  onClick={playVideo} className="btn btn-success"><i class="fas fa-video"></i></button>
             </div>
          </Col>
          
